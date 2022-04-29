@@ -8,7 +8,7 @@ const shuffle = (array) => {
   let currentIndex = array.length;
   let randomIndex;
 
-  while (currentIndex != 0) {
+  while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
@@ -37,17 +37,27 @@ function App() {
     { name: "Dalinar", id: uniqid() },
   ]);
 
+  const shuffleCardList = () => {
+    setCardList([...shuffle(cardList)]);
+  };
+
   // Shuffle array when component mounts
   useEffect(() => {
-    setCardList([...shuffle(cardList)]);
+    shuffleCardList();
   }, []);
+
+  const [cardsTaken, setCardsTaken] = useState([]);
+
+  const takeCard = (data) => {
+    setCardsTaken(cardsTaken.concat(data));
+  };
 
   return (
     <div>
       <Header />
       <div className="card-list">
         {cardList.map((cardElement) => {
-          return <Card data={cardElement} />;
+          return <Card data={cardElement} takeCard={takeCard}/>;
         })}
       </div>
     </div>
