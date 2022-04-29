@@ -6,7 +6,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
-  gap: 32px;
+  gap: 48px;
   padding: 32px;
   background-image: linear-gradient(
       to right,
