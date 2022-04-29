@@ -1,8 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import uniqid from "uniqid";
-import "./styles/app.css"
+import "./styles/app.css";
+
+const shuffle = (array) => {
+  let currentIndex = array.length;
+  let randomIndex;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+};
 
 function App() {
   const [cardList, setCardList] = useState([
@@ -19,6 +36,11 @@ function App() {
     { name: "Szeth", id: uniqid() },
     { name: "Dalinar", id: uniqid() },
   ]);
+
+  // Shuffle array when component mounts
+  useEffect(() => {
+    setCardList([...shuffle(cardList)]);
+  }, []);
 
   return (
     <div>
