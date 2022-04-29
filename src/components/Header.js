@@ -1,4 +1,4 @@
-function Header(props) {
+function Header() {
   return (
     <div>
       <h1>Cosmere's Memory Game</h1>
