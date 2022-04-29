@@ -47,23 +47,26 @@ function App() {
   }, []);
 
   const [cardsTaken, setCardsTaken] = useState([]);
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
   const takeCard = (data) => {
     if (cardsTaken.includes(data)) {
       setCardsTaken([]);
+      if (score > bestScore) {
+        setBestScore(score);
+        setScore(0);
+      }
     } else {
       setCardsTaken(cardsTaken.concat(data));
+      setScore(score + 1);
     }
     shuffleCardList();
   };
 
-  useEffect(() => {
-    console.log(cardsTaken);
-  }, [cardsTaken]);
-
   return (
     <div>
-      <Header />
+      <Header score={score} bestScore={bestScore} />
       <div className="card-list">
         {cardList.map((cardElement) => {
           return (

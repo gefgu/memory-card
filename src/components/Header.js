@@ -1,10 +1,13 @@
-function Header() {
+function Header(props) {
+  const { score, bestScore } = props;
+  console.log(props);
+
   return (
     <div>
       <h1>Cosmere's Memory Game</h1>
       <div className="scoreboard">
-        <p>Score: 0</p>
-        <p>Best Score: 0</p>
+        <p>Score: {score}</p>
+        <p>Best Score: {bestScore}</p>
       </div>
       <div>
         <p>
