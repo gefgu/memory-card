@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import Card from "./components/Card";
 import uniqid from "uniqid";
 
 function App() {
@@ -18,10 +19,14 @@ function App() {
     { name: "Dalinar", id: uniqid() },
   ]);
 
-
   return (
     <div>
       <Header />
+      <div className="card-list">
+        {cardList.map((cardElement) => {
+          return <Card data={cardElement} />;
+        })}
+      </div>
     </div>
   );
 }
