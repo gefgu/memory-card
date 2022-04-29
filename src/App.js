@@ -57,7 +57,7 @@ function App() {
       <Header />
       <div className="card-list">
         {cardList.map((cardElement) => {
-          return <Card data={cardElement} takeCard={takeCard}/>;
+          return <Card data={cardElement} takeCard={takeCard} key={cardElement.id} />;
         })}
       </div>
     </div>
