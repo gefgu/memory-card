@@ -7,4 +7,5 @@ body {
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
   gap: 32px;
+  margin-bottom: 32px;
 }
