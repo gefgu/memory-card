@@ -7,5 +7,15 @@ body {
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
   gap: 32px;
-  margin-bottom: 32px;
+  padding: 32px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
