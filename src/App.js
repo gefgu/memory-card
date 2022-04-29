@@ -49,15 +49,26 @@ function App() {
   const [cardsTaken, setCardsTaken] = useState([]);
 
   const takeCard = (data) => {
-    setCardsTaken(cardsTaken.concat(data));
+    if (cardsTaken.includes(data)) {
+      setCardsTaken([]);
+    } else {
+      setCardsTaken(cardsTaken.concat(data));
+    }
+    shuffleCardList();
   };
+
+  useEffect(() => {
+    console.log(cardsTaken);
+  }, [cardsTaken]);
 
   return (
     <div>
       <Header />
       <div className="card-list">
         {cardList.map((cardElement) => {
-          return <Card data={cardElement} takeCard={takeCard} key={cardElement.id} />;
+          return (
+            <Card data={cardElement} takeCard={takeCard} key={cardElement.id} />
+          );
         })}
       </div>
     </div>
