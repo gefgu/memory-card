@@ -1,9 +1,11 @@
+import "../styles/header.css"
+
 function Header(props) {
   const { score, bestScore } = props;
   console.log(props);
 
   return (
-    <div>
+    <div className="heading">
       <h1>Cosmere's Memory Game</h1>
       <div className="scoreboard">
         <p>Score: {score}</p>
