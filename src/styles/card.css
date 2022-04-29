@@ -1,9 +1,10 @@
 .card {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
   height: 300px;
   padding: 16px;
   border: 1px solid black;
   border-radius: 4px;
+  text-align: center;
 }
