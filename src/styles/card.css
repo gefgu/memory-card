@@ -8,3 +8,8 @@
   border-radius: 4px;
   text-align: center;
 }
+
+.card img {
+  width: 200px;
+  max-height: 250px;
+}
