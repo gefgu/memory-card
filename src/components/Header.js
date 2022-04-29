@@ -2,7 +2,6 @@ import "../styles/header.css"
 
 function Header(props) {
   const { score, bestScore } = props;
-  console.log(props);
 
   return (
     <div className="heading">
