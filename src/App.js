@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import uniqid from "uniqid";
+import "./styles/app.css"
 
 function App() {
   const [cardList, setCardList] = useState([
