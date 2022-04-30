@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.db47a064.css",
+    "main.js": "/memory-card/static/js/main.b9e14afc.js",
+    "static/media/elend.jpg": "/memory-card/static/media/elend.dcea179ba56fbb651c3f.jpg",
+    "static/media/adolin.jpg": "/memory-card/static/media/adolin.c5805993438728780863.jpg",
+    "static/media/vasher.jpg": "/memory-card/static/media/vasher.786234232b12835726d0.jpg",
+    "static/media/dalinar.jpg": "/memory-card/static/media/dalinar.e50f1b5bd630f1334699.jpg",
+    "static/media/hoid.jpg": "/memory-card/static/media/hoid.4b0217327c338f179e0f.jpg",
+    "static/media/background.jpg": "/memory-card/static/media/background.7f5770a76dd5186987f5.jpg",
+    "static/media/vin.jpg": "/memory-card/static/media/vin.5589b03413db41d9eb24.jpg",
+    "static/media/kaladin.jpg": "/memory-card/static/media/kaladin.bc6c7ef9249aed0b9a09.jpg",
+    "static/media/szeth.jpg": "/memory-card/static/media/szeth.ba96fc0abc97d8ce349e.jpg",
+    "static/media/wax.jpg": "/memory-card/static/media/wax.a20272fad3a53530d948.jpg",
+    "static/media/wayne.jpg": "/memory-card/static/media/wayne.3e6d28d7dc515258181d.jpg",
+    "static/media/shallan.jpg": "/memory-card/static/media/shallan.56955eab6a2f6d615e55.jpg",
+    "static/media/steris.jpg": "/memory-card/static/media/steris.63e96fd30135aafa0495.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.db47a064.css.map": "/memory-card/static/css/main.db47a064.css.map",
+    "main.b9e14afc.js.map": "/memory-card/static/js/main.b9e14afc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db47a064.css",
+    "static/js/main.b9e14afc.js"
+  ]
+}
