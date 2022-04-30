@@ -55,14 +55,18 @@ function App() {
       setCardsTaken([]);
       if (score > bestScore) {
         setBestScore(score);
-        setScore(0);
       }
+      setScore(0);
     } else {
       setCardsTaken(cardsTaken.concat(data));
       setScore(score + 1);
     }
     shuffleCardList();
   };
+
+  useEffect(() => {
+    console.table(cardsTaken);
+  }, [cardsTaken]);
 
   return (
     <div>
